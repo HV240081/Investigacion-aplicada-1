@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.logo {
+    height: 100px;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+.row img {
+    background: none; 
+    width: 100%; 
+    height: 480px; 
+    object-fit: cover; 
+}
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row1 img {
+    width: 100%; 
+    max-width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.row1 h3 {
+    margin-top: 10px; 
+}
+
+.header {
+    background: linear-gradient(90deg, #000000, #000, #000, #0d0d0d, #1a1a1a);
+    color: white;
+
+}
+.header .logo {
+    height: 90px;
+    width: 400px;
+    display: block;
+    align-items: left;
+}
+
+h1{
+    color: wheat;
+    text-shadow: #000;
+    text-align: center;
+}
+
+h3{
+    color: #e09f23;
+    text-shadow: #fff;
+    text-align: center;
+}
+h4{
+    color: #fff;
+    text-shadow: #fff;
+    text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 756px) {
+    .row1 .col-md-3 {
+        flex: 0 0 50%; /* Dos imágenes por fila en tabletas */
+        max-width: 50%;
+    }
+}
+
+/* Estilo específico para teléfonos móviles (pantallas hasta 480px) */
+@media screen and (max-width: 480px) {
+    .row1 .col-6 {
+        flex: 0 0 100%; /* Una imagen por fila en teléfonos móviles */
+        max-width: 100%;
+    }
+}
